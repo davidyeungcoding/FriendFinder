@@ -209,12 +209,10 @@
                     answers: number
                 };
 
-                console.log(newUser);
 
-                $.post('/api/friends'), newUser, function(data) {
-                    pass;
-                }
-
+                $.post('/api/friends', newUser).then(function(data) {
+                    console.log(newUser);
+                });
             });
         
         });
