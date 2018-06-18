@@ -6,8 +6,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 
-require('./routing/apiRoutes')(app);
-require('./routing/htmlRoutes')(app);
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
 // ===============
 // || VARIABLES ||
