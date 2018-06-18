@@ -26,7 +26,7 @@ module.exports = function(app) {
     // || POST ||
     // ==========
 
-    app.post('api/friends', function(req, res) {
+    app.post('/api/friends', function(req, res) {
         friendArr.push(req.body);
         res.json(true);
     })
