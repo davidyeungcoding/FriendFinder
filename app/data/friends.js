@@ -4,17 +4,17 @@
 
 var friendArr = [
     {
-        name: 'test',
-        photo: 'photo',
+        name: 'Test Dummy',
+        photo: 'https://vignette.wikia.nocookie.net/scribblenauts/images/4/42/Crash_Test_Dummy.png/revision/latest?cb=20130309213400',
         answers: [
             1,
             3,
+            5,
+            5,
             2,
-            1,
-            3,
-            2,
-            1,
-            3,
+            4,
+            4,
+            5,
             2,
             5
         ]
