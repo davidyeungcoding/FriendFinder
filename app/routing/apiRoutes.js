@@ -2,7 +2,7 @@
 // || REQUIREMENTS ||
 // ==================
 
-var tableData = require('../data/friends');
+var friendArr = require('../data/friends');
 
 // =============
 // || EXPORTS ||
@@ -19,15 +19,16 @@ module.exports = function(app) {
     // =========
 
     app.get('/api/friends', function(req, res) {
-        res.json(tableData);
+        res.json(friendArr);
     });
 
     // ==========
     // || POST ||
     // ==========
 
-    app.post('api/friends', function(req,res) {
-        tableData.push(req.body);
+    app.post('api/friends', function(req, res) {
+        friendArr.push(req.body);
+        res.json(true);
     })
 
 };
